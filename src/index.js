@@ -9,6 +9,7 @@ app.set('port', process.env.PORT || 5000);
 app.use(express.json());
 
 // Routes
+app.use(require('./routes/usuarios'))
 app.use(require('./routes/alumnos'));
 app.use(require('./routes/auth'));
 // Starting the server
